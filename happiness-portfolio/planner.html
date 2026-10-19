@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Happiness Akuma - Cyber Security student at MIVA Open University. Portfolio, projects and academic planner.">
+<title>Academic planner | Happiness Akuma</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="index.html" aria-label="Happiness Akuma - home">Happiness Akuma</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Open menu"><span></span><span></span><span></span></button>
+    <nav id="siteNav" class="site-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" aria-current="page">Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+
+<section class="page-head"><div class="wrap"><h1>Academic planner</h1><p class="lead">Add study tasks, tick them off, and delete what you no longer need. Tasks are saved in your browser.</p></div></section>
+<section class="section">
+  <div class="wrap planner">
+    <form id="taskForm" class="task-form" novalidate>
+      <div class="field grow">
+        <label for="taskInput">New task</label>
+        <input id="taskInput" type="text" maxlength="100" placeholder="e.g. Revise networking notes" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="taskDue">Due date (optional)</label>
+        <input id="taskDue" type="date">
+      </div>
+      <div class="field">
+        <label for="taskPriority">Priority</label>
+        <select id="taskPriority"><option>Low</option><option selected>Medium</option><option>High</option></select>
+      </div>
+      <button class="btn" type="submit">Add task</button>
+      <p class="error" id="taskError" role="alert"></p>
+    </form>
+
+    <div class="toolbar">
+      <p id="summary" aria-live="polite"></p>
+      <div class="filters" id="taskFilters" role="group" aria-label="Filter tasks">
+        <button type="button" class="chip is-on" data-filter="all">All</button>
+        <button type="button" class="chip" data-filter="active">Active</button>
+        <button type="button" class="chip" data-filter="done">Completed</button>
+      </div>
+      <button type="button" class="btn ghost small" id="clearDone">Clear completed</button>
+    </div>
+    <div class="progress" aria-hidden="true"><div id="bar"></div></div>
+    <ul id="taskList" class="tasks"></ul>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap foot">
+    <p>&copy; <span id="year">2026</span> Happiness Akuma. Built with HTML, CSS and JavaScript.</p>
+    <ul class="links" aria-label="Contact links">
+      <li><a href="mailto:akumaobioma@gmail.com">akumaobioma@gmail.com</a></li>
+      <li><a href="tel:+2347045854537">07045854537</a></li>
+      <li><a href="https://github.com/Oma23-C" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+<script src="js/planner.js"></script>
+</body>
+</html>
