@@ -15,7 +15,7 @@ Technologies
 
 Live Website
 
-"Visit my portfolio" (https://happiness-akuma-portfolio.netlify.app)
+🌐 "Visit my portfolio" (https://happiness-akuma-portfolio.netlify.app)
 
 Purpose
 
